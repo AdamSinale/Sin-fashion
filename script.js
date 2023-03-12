@@ -1,0 +1,113 @@
+    // scroll to top button
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {mybutton.style.display = "block";} 
+      else { mybutton.style.display = "none";} }
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn")
+    var rootElement = document.documentElement
+    function scrollToTop() {
+        rootElement.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })}
+      
+    // change by chose
+    function getColor(){
+        document.getElementById('rcolor').innerHTML=("Rose Color: "+form.color[form.color.selectedIndex].text);
+        document.getElementById('bcolor').innerHTML=("Base Color: "+form.base[form.base.selectedIndex].text);
+        if(form.base.selectedIndex == 0){showSlides(slideIndex = form.color.selectedIndex*2+1);}
+        else{showSlides(slideIndex = form.color.selectedIndex*2+2); } }
+    
+    // sidebar
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "300px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";}
+    function closeNav() {
+         document.getElementById("mySidenav").style.width = "0";
+         document.body.style.backgroundColor = "white";}
+
+    //faqs open answers
+    function answer1() {
+        var more1Text = document.getElementById("more1");
+        var head1Text = document.getElementById("head1");
+        if (more1Text.style.display == "inline") {more1Text.style.display = "none";}
+        else { more1Text.style.display = "inline";}}
+    function answer2() {
+        var more2Text = document.getElementById("more2");
+        var head2Text = document.getElementById("head2");
+        if (more2Text.style.display == "inline") {more2Text.style.display = "none";}
+        else { more2Text.style.display = "inline";}}
+    function answer3() {
+        var more3Text = document.getElementById("more3");
+        var head3Text = document.getElementById("head3");
+        if (more3Text.style.display == "inline") {more3Text.style.display = "none";}
+        else { more3Text.style.display = "inline";}}
+    function answer4() {
+        var more4Text = document.getElementById("more4");
+        var head4Text = document.getElementById("head4");
+        if (more4Text.style.display == "inline") {more4Text.style.display = "none";}
+        else { more4Text.style.display = "inline";}}
+
+  var swiper = new Swiper(".slide-content", {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints:{
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 2,
+        },
+        950: {
+            slidesPerView: 3,
+        },
+    },
+  });
+
+    $('.color-btn').click(function(){
+      $('nav ul .color-show').toggleClass("show");
+      $('nav ul .first').toggleClass("rotate");
+    });
+    $('.size-btn').click(function(){
+      $('nav ul .size-show').toggleClass("show");
+      $('nav ul .second').toggleClass("rotate");
+    });
+    $('.product_type-btn').click(function(){
+      $('nav ul .product_type-show').toggleClass("show");
+      $('nav ul .third').toggleClass("rotate");
+    });
+    $('.fabric-btn').click(function(){
+      $('nav ul .fabric-show').toggleClass("show");
+      $('nav ul .fourth').toggleClass("rotate");
+    });
+    $('.support-btn').click(function(){
+      $('nav ul .support-show').toggleClass("show");
+      $('nav ul .fifth').toggleClass("rotate");
+    });
+    $('.length-btn').click(function(){
+      $('nav ul .length-show').toggleClass("show");
+      $('nav ul .sixth').toggleClass("rotate");
+    });
+    $('.just_dropped-btn').click(function(){
+      $('nav ul .just_dropped-show').toggleClass("show");
+      $('nav ul .seventh').toggleClass("rotate");
+    });
+    $('nav ul li').click(function(){
+      $(this).addClass("active").siblings().removeClass("active");
+    });
+    
