@@ -79,6 +79,49 @@
     },
   });
 
+  $('.nav_btn').click(function(){
+    $(this).toggleClass("click");
+    $('.sidebar').toggleClass("show");
+     document.body.style.backgroundColor = "rgba(0,0,0,0.2)";
+  });
+
+  $('.filter_btn').click(function(){
+    $(this).toggleClass("click");
+    $('.filterbar').toggleClass("show");
+     document.body.style.backgroundColor = "rgba(0,0,0,0.2)";
+  });
+  
+  $('.close_btn').click(function(){
+     document.body.style.backgroundColor = "rgba(255,255,255,1)";
+  })
+    $('.women-btn').click(function(){
+      $('nav ul .women-show').toggleClass("show");
+      $('nav ul .first').toggleClass("rotate");
+    });
+    $('.men-btn').click(function(){
+      $('nav ul .men-show').toggleClass("show");
+      $('nav ul .second').toggleClass("rotate");
+    });
+    $('.accessories-btn').click(function(){
+      $('nav ul .accessories-show').toggleClass("show");
+      $('nav ul .third').toggleClass("rotate");
+    });
+    $('.beauty-btn').click(function(){
+      $('nav ul .beauty-show').toggleClass("show");
+      $('nav ul .fourth').toggleClass("rotate");
+    });
+    $('.rewards-btn').click(function(){
+      $('nav ul .rewards-show').toggleClass("show");
+      $('nav ul .fifth').toggleClass("rotate");
+    });
+    $('.rewards2-btn').click(function(){
+      $('nav ul .rewards2-show').toggleClass("show");
+      $('nav ul .fifth').toggleClass("rotate");
+    });
+    $('nav ul li').click(function(){
+      $(this).addClass("active").siblings().removeClass("active");
+    });
+    
     $('.color-btn').click(function(){
       $('nav ul .color-show').toggleClass("show");
       $('nav ul .first').toggleClass("rotate");
@@ -110,4 +153,3 @@
     $('nav ul li').click(function(){
       $(this).addClass("active").siblings().removeClass("active");
     });
-    

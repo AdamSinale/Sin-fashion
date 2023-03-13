@@ -303,14 +303,14 @@ body{
     text-align: center;
     letter-spacing: 1px;
 }
-.leftbar .text .women, .filterbar .text .women{
+.leftbar .text .men, .filterbar .text .men{
     margin: 0 5%;
     color: rgb(0, 0, 0);
     text-decoration: underline;
     text-underline-offset: 4px;
     text-decoration-thickness: 0.125em;
 }
-.leftbar .text .men, .filterbar .text .men{
+.leftbar .text .women, .filterbar .text .women{
     margin: 0 5%;
     color: rgb(117, 117, 117);
 }
@@ -318,6 +318,7 @@ body{
     height: 100%;
     width: 100%;
     list-style: none;
+    overflow-y:scroll;
 }
 .leftbar ul li, .filterbar ul li{
     line-height: 60px;
@@ -474,8 +475,7 @@ a:hover {
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
     background-color: lightgray; /* Set a background color */
-    color: black; /* Text color
-       */
+    color: black; /* Text color*/
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 *{
   margin: 0;
@@ -21,7 +22,6 @@
   background-color: #f1f1f1;
   opacity:0%;
   transition: opacity 0.3s, right 0s 0.2s;
-  
 }
 .one:hover + .dropdown_content_one, .dropdown_content_one:hover,
 .two:hover + .dropdown_content_two, .dropdown_content_two:hover,
@@ -97,7 +97,16 @@
 .navbar .stuff li:hover::after{
   width: 100%;
 }
-.nav_btn{
+.open_nav{
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: left 0.4s ease;
+  z-index: 3;
+  color: rgb(0, 0, 0);
   display: none;
 }
 @media screen and (max-width: 1000px) {
@@ -127,6 +136,11 @@
 .search:hover .search2,.account:hover .account2 ,
 .heart:hover .heart2 ,.bag:hover .bag2, .card_img:hover .second-img{
   display: inline;
+}
+.col{
+  margin: 2% 3.3%;
+  display: inline-block;
+  vertical-align: top;
 }
 .banner{
     width: 100%;
@@ -213,7 +227,7 @@ a{
 .banner2{
   width: 100%;
   height: 75vh;
-  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(photos/thmb2.png);
+  background-image: url(photos/banner.webp);
   background-size:cover;
   background-position: center;
   text-align: center;
@@ -368,7 +382,156 @@ body{
   }
 }
 .col{
-  margin: 2% 3.6%;
+  margin: 2% 3.3%;
   display: inline-block;
   vertical-align: top;
+}
+
+.open_nav span{
+  font-size: 28px;
+  line-height: 45px;
+}
+.close_btn{
+  background: #fc000000;
+  padding: 1% 5%;
+  border-bottom: 1px solid grey;
+}
+.close_btn span{
+  content: '/f00d';
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  color: black;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.close_btn span:before{
+  content: '\f00d';
+}
+.sidebar{
+  position: fixed;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  left: -500px;
+  background: #fff;
+  transition: left 0.4s ease;
+  z-index: 3;
+}
+.phone_nav{
+  font-weight: bolder;
+  background: #fff;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.6% 2.5%;
+  color: #7c7c7cda;
+}
+.dropdown_content_one, .dropdown_content_two, .dropdown_content_three,
+.dropdown_content_four, .dropdown_content_five{
+  position: absolute;
+  right: 100%;
+  width: 100%;
+  background-color: #f1f1f1;
+  opacity:0%;
+  transition: opacity 0.3s, right 0s 0.2s;
+}
+.one_phone.active + .dropdown_content_one, .two_phone.active + .dropdown_content_two,
+.three_phone.active + .dropdown_content_three, .four_phone.active + .dropdown_content_four,
+.five_phone.active + .dropdown_content_five{
+  opacity:100%;
+  right: 0;
+  transition: opacity 0.4s, right 0s;
+}
+.sidebar.show{
+  left: 0px;
+}
+.sidebar ul ul{
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+.dropdown_content{
+  overflow-y:scroll;
+}
+.dropdown_content li{
+  line-height: 200px;
+  width: 93%;
+  margin-left: 4%;
+  border: 1px solid rgba(0, 0, 0, 0.247);
+}
+.sidebar ul ul li a{
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 40px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border-left: 3px solid transparent;
+  color: #fff;
+}
+.phone_nav.active{
+  color: #000;
+  border-bottom: 3px solid cyan;
+}
+.sidebar ul ul ul{
+  width: 100%;
+  position: static;
+  display: none;
+}
+.sidebar ul ul ul.show{
+  display: block;
+}
+.sidebar ul ul ul li{
+  border: 1px solid rgba(0, 0, 0, 0.137);
+}
+.sidebar ul ul ul li:last-child{
+  border-bottom: none;
+}
+.sidebar ul ul ul li a{
+  line-height: 42px;
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+  padding-left: 80px;
+}
+.sidebar ul ul ul li a:hover{
+  background-color: #d3d3d3;
+}
+.sidebar ul ul li a span{
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: transform 0.4s;
+}
+.sidebar ul ul li a span.rotate{
+  transform: translateY(-50%) rotate(-180deg);
+}
+.women-btn{
+  background: url(/photos/phone_nav/new_arrivals.webp); 
+  background-size:cover;
+}
+.men-btn{
+  background: url(/photos/phone_nav/featured.webp); 
+  background-size:cover;
+}
+.accessories-btn{
+  background: url(/photos/phone_nav/tops.webp); 
+  background-size:cover;
+}
+.beauty-btn{
+  background: url(/photos/phone_nav/bottoms.webp); 
+  background-size:cover;
+}
+.rewards-btn{
+  background: url(/photos/phone_nav/outerwear.webp); 
+  background-size:cover;
+}
+.rewards2-btn{
+  background: url(/photos/phone_nav/accessories.webp); 
+  background-size:cover;
 }
