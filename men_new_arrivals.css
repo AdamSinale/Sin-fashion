@@ -46,14 +46,13 @@ body{
   background-color: #ddd;
 }
 #logo{
-  margin: 0% 2%;
-  width: 18%;
-  max-width:120px;
-  cursor: pointer;
+  width:120px;
 }
 .navbarEl{
-  vertical-align: middle;
-  display: inline;
+  width: 60%;
+}
+.navbarEl li{
+  line-height: 70px;
 }
 .navbar{
   border-bottom: 1px solid grey;
@@ -62,6 +61,10 @@ body{
   height: 70px;
   top:0;
   z-index: 2;
+  display: flex;
+}
+.explore{
+  text-align: right;
 }
 .navbar ul li{
   display: inline-block;
@@ -78,9 +81,6 @@ body{
   cursor: pointer;
 }
 @media screen and (min-width: 1000px) {
-  #logo{
-    width: 120px;
-  }
   .navbar ul li{
     font-size:17px;
   }
@@ -91,16 +91,14 @@ body{
   width: 0%;
   background:#000;
   position: absolute;
-  bottom: 0%;
+  bottom: 22px;
   left: 0;
-  bottom: -2px;
   transition: 0.3s;
 }
 .navbar .stuff li:hover::after{
   width: 100%;
 }
 .open_nav{
-  position: absolute;
   height: 45px;
   width: 45px;
   text-align: center;
@@ -112,18 +110,27 @@ body{
   display: none;
 }
 @media screen and (max-width: 1000px) {
-  .nav_btn{
-    display: inline;
-  }
   .navbar{
-    text-align: center;
+    display: flex;
     justify-content: space-between;
   }
-  #logo{
-    margin: 0 32%;
+  .navbarEl{
+    margin: 0 3%;
+    width: 30%;
+    display: inline-block;
+    vertical-align: middle;
   }
-  .stuff{
+  #logo{
+    text-align: center;
+  }
+  .stuff li, .stuff{
     display: none;
+  }
+  .open_nav{
+    text-align: left;
+  }
+  .explore{
+    text-align: right;
   }
   }
 .search, .account, .heart, .bag, .card_img{
@@ -131,9 +138,12 @@ body{
 }
 .search2, .account2, .heart2, .bag2, .second-img{
   position: absolute;
-  top: 0;
+  top: 30%;
   left: 0;
   display: none;
+}
+.second-img{
+  top: 0;
 }
 .search:hover .search2,.account:hover .account2 ,
 .heart:hover .heart2 ,.bag:hover .bag2, .card_img:hover .second-img{
@@ -318,7 +328,6 @@ body{
     height: 100%;
     width: 100%;
     list-style: none;
-    overflow-y:scroll;
 }
 .leftbar ul li, .filterbar ul li{
     line-height: 60px;
@@ -337,11 +346,13 @@ body{
     font-weight: 500;
     display: block;
     width: 100%;
-    border-left: 3px solid transparent;
+    border: 1px solid rgb(197, 197, 197);
+    text-align: left;
+    cursor: pointer;
 }
 .leftbar ul li.active a, .filterbar ul li.active a{
     color: rgb(0, 0, 0);
-    border-left-color: cyan;
+    border-left: 3px solid cyan;
 }
 .leftbar ul li a:hover, .filterbar ul li a:hover{
     background: #e6e6e6;
@@ -364,7 +375,7 @@ body{
 }
 .leftbar ul li.active ul li a, .filterbar ul li.active ul li a{
     color: #000;
-    border-left-color: transparent;
+    border-left: 1px solid rgb(197, 197, 197);
 }
 .leftbar ul li a span, .filterbar ul li a span{
     position: absolute;
@@ -409,6 +420,13 @@ body{
         width: 40%;
         display: inline-block;
     }
+    .sort_by span{
+      line-height: 45px;
+        text-align: center;
+        width: 100%;
+        height: 45px;
+        display: block;
+    }
     .filters_container{
       display: none;
     }
@@ -429,18 +447,21 @@ body{
     vertical-align: top;
     display: inline-block;
 }
+.new_arrivals_container{
+  text-align: center;
+}
 .navbarEl a{
     font-weight: 100;
 }
-a{
+.card-title, a{
     color: #000;
-    font-weight: bold;
+    font-weight: 600;
     text-decoration: none;
 }
-a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    text-decoration-thickness: 0.125em;
+.cardL:hover > .card-title {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: .125em;
 }
 .card_img{
     margin: 7% 0;
@@ -462,15 +483,17 @@ a:hover {
 .filters{ 
     position: sticky;
     top: 95px;
+    padding-bottom: 2.5%;
 }
 .cards_container{
     width: 81%;
+    padding-bottom: 5%;
 }
 #myBtn{
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 2.5%; /* Place the button at the bottom of the page */
-    right: 48%; /* Place the button 30px from the right */
+    right: 48%; /* Place the button 3pan0px from the right */
     z-index: 1; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
@@ -495,4 +518,32 @@ a:hover {
 .leftbar ul li ul li img, .filterbar ul li ul li img{ 
   width: 25px;
   height: 25px;
+}
+.beige_pants.hide, .black_pants.hide, .blue_pants.hide, .red_pants.hide, .gray_pants.hide,
+.green_pants.hide, .pink_pants.hide, .brown_pants.hide, .white_pants.hide{
+  display: none;
+}
+.about_us{
+  color: #fff;
+  background-color: rgb(0, 0, 0);
+}
+.aqb{
+  display: inline-block;
+  padding:1.5% 6%;
+  vertical-align: top;
+}
+input{
+  width: 77%;
+  height: 26px;
+  border-radius: 7px;
+}
+p, a{
+  font-family: trebuchet ms ,sans-serif;
+  font-size: 103%;
+}
+.aqb a{
+  color: #fff;
+}
+.aqb form input{
+  width: 100%;
 }

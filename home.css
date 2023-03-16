@@ -44,14 +44,13 @@
   background-color: #ddd;
 }
 #logo{
-  margin: 0% 2%;
-  width: 18%;
-  max-width:120px;
-  cursor: pointer;
+  width:120px;
 }
 .navbarEl{
-  vertical-align: middle;
-  display: inline;
+  width: 60%;
+}
+.navbarEl li{
+  line-height: 70px;
 }
 .navbar{
   border-bottom: 1px solid grey;
@@ -60,6 +59,10 @@
   height: 70px;
   top:0;
   z-index: 2;
+  display: flex;
+}
+.explore{
+  text-align: right;
 }
 .navbar ul li{
   display: inline-block;
@@ -76,9 +79,6 @@
   cursor: pointer;
 }
 @media screen and (min-width: 1000px) {
-  #logo{
-    width: 120px;
-  }
   .navbar ul li{
     font-size:17px;
   }
@@ -89,16 +89,14 @@
   width: 0%;
   background:#000;
   position: absolute;
-  bottom: 0%;
+  bottom: 22px;
   left: 0;
-  bottom: -2px;
   transition: 0.3s;
 }
 .navbar .stuff li:hover::after{
   width: 100%;
 }
 .open_nav{
-  position: absolute;
   height: 45px;
   width: 45px;
   text-align: center;
@@ -110,18 +108,27 @@
   display: none;
 }
 @media screen and (max-width: 1000px) {
-  .nav_btn{
-    display: inline;
-  }
   .navbar{
-    text-align: center;
+    display: flex;
     justify-content: space-between;
   }
-  #logo{
-    margin: 0 32%;
+  .navbarEl{
+    margin: 0 3%;
+    width: 30%;
+    display: inline-block;
+    vertical-align: middle;
   }
-  .stuff{
+  #logo{
+    text-align: center;
+  }
+  .stuff li, .stuff{
     display: none;
+  }
+  .open_nav{
+    text-align: left;
+  }
+  .explore{
+    text-align: right;
   }
   }
 .search, .account, .heart, .bag, .card_img{

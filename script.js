@@ -18,7 +18,7 @@
         document.getElementById('bcolor').innerHTML=("Base Color: "+form.base[form.base.selectedIndex].text);
         if(form.base.selectedIndex == 0){showSlides(slideIndex = form.color.selectedIndex*2+1);}
         else{showSlides(slideIndex = form.color.selectedIndex*2+2); } }
-    
+
     // sidebar
     function openNav() {
         document.getElementById("mySidenav").style.width = "300px";
@@ -26,28 +26,6 @@
     function closeNav() {
          document.getElementById("mySidenav").style.width = "0";
          document.body.style.backgroundColor = "white";}
-
-    //faqs open answers
-    function answer1() {
-        var more1Text = document.getElementById("more1");
-        var head1Text = document.getElementById("head1");
-        if (more1Text.style.display == "inline") {more1Text.style.display = "none";}
-        else { more1Text.style.display = "inline";}}
-    function answer2() {
-        var more2Text = document.getElementById("more2");
-        var head2Text = document.getElementById("head2");
-        if (more2Text.style.display == "inline") {more2Text.style.display = "none";}
-        else { more2Text.style.display = "inline";}}
-    function answer3() {
-        var more3Text = document.getElementById("more3");
-        var head3Text = document.getElementById("head3");
-        if (more3Text.style.display == "inline") {more3Text.style.display = "none";}
-        else { more3Text.style.display = "inline";}}
-    function answer4() {
-        var more4Text = document.getElementById("more4");
-        var head4Text = document.getElementById("head4");
-        if (more4Text.style.display == "inline") {more4Text.style.display = "none";}
-        else { more4Text.style.display = "inline";}}
 
   var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
@@ -125,6 +103,7 @@
     $('.color-btn').click(function(){
       $('nav ul .color-show').toggleClass("show");
       $('nav ul .first').toggleClass("rotate");
+      document.body.style.height = "200px";
     });
     $('.size-btn').click(function(){
       $('nav ul .size-show').toggleClass("show");
@@ -153,3 +132,103 @@
     $('nav ul li').click(function(){
       $(this).addClass("active").siblings().removeClass("active");
     });
+
+    $('.beige_btn').click(function(){
+      $('.black_pants').toggleClass("hide");
+      $('.blue_pants').toggleClass("hide");
+      $('.brown_pants').toggleClass("hide");
+      $('.green_pants').toggleClass("hide");
+      $('.gray_pants').toggleClass("hide");
+      $('.pink_pants').toggleClass("hide");
+      $('.red_pants').toggleClass("hide");
+      $('.white_pants').toggleClass("hide");
+    });
+    $('.black_btn').click(function(){
+      $('.beige_pants').toggleClass("hide");
+      $('.blue_pants').toggleClass("hide");
+      $('.brown_pants').toggleClass("hide");
+      $('.green_pants').toggleClass("hide");
+      $('.gray_pants').toggleClass("hide");
+      $('.pink_pants').toggleClass("hide");
+      $('.red_pants').toggleClass("hide");
+      $('.white_pants').toggleClass("hide");
+    });
+    $('.blue_btn').click(function(){
+      $('.beige_pants').toggleClass("hide");
+      $('.black_pants').toggleClass("hide");
+      $('.brown_pants').toggleClass("hide");
+      $('.green_pants').toggleClass("hide");
+      $('.gray_pants').toggleClass("hide");
+      $('.pink_pants').toggleClass("hide");
+      $('.red_pants').toggleClass("hide");
+      $('.white_pants').toggleClass("hide");
+    });
+    $('.brown_btn').click(function(){
+      $('.beige_pants').toggleClass("hide");
+      $('.black_pants').toggleClass("hide");
+      $('.blue_pants').toggleClass("hide");
+      $('.green_pants').toggleClass("hide");
+      $('.gray_pants').toggleClass("hide");
+      $('.pink_pants').toggleClass("hide");
+      $('.red_pants').toggleClass("hide");
+      $('.white_pants').toggleClass("hide");
+    });
+    $('.green_btn').click(function(){
+      $('.beige_pants').toggleClass("hide");
+      $('.black_pants').toggleClass("hide");
+      $('.blue_pants').toggleClass("hide");
+      $('.brown_pants').toggleClass("hide");
+      $('.gray_pants').toggleClass("hide");
+      $('.pink_pants').toggleClass("hide");
+      $('.red_pants').toggleClass("hide");
+      $('.white_pants').toggleClass("hide");
+    });
+    $('.gray_btn').click(function(){
+      $('.beige_pants').toggleClass("hide");
+      $('.black_pants').toggleClass("hide");
+      $('.blue_pants').toggleClass("hide");
+      $('.brown_pants').toggleClass("hide");
+      $('.green_pants').toggleClass("hide");
+      $('.pink_pants').toggleClass("hide");
+      $('.red_pants').toggleClass("hide");
+      $('.white_pants').toggleClass("hide");
+    });
+    $('.pink_btn').click(function(){
+      $('.beige_pants').toggleClass("hide");
+      $('.black_pants').toggleClass("hide");
+      $('.blue_pants').toggleClass("hide");
+      $('.brown_pants').toggleClass("hide");
+      $('.green_pants').toggleClass("hide");
+      $('.gray_pants').toggleClass("hide");
+      $('.red_pants').toggleClass("hide");
+      $('.white_pants').toggleClass("hide");
+    });
+    $('.red_btn').click(function(){
+      $('.beige_pants').toggleClass("hide");
+      $('.black_pants').toggleClass("hide");
+      $('.blue_pants').toggleClass("hide");
+      $('.brown_pants').toggleClass("hide");
+      $('.green_pants').toggleClass("hide");
+      $('.gray_pants').toggleClass("hide");
+      $('.pink_pants').toggleClass("hide");
+      $('.white_pants').toggleClass("hide");
+    });
+    $('.white_btn').click(function(){
+      $('.beige_pants').toggleClass("hide");
+      $('.black_pants').toggleClass("hide");
+      $('.blue_pants').toggleClass("hide");
+      $('.brown_pants').toggleClass("hide");
+      $('.green_pants').toggleClass("hide");
+      $('.gray_pants').toggleClass("hide");
+      $('.pink_pants').toggleClass("hide");
+      $('.red_pants').toggleClass("hide");
+    });
+
+    function getSort(){
+      if(form.sort.selectedIndex == 1){
+          $('.new').toggleClass("hide");
+      }
+      if(form.sort.selectedIndex == 4){
+          $('.best_seller').toggleClass("hide");
+      }
+  }  

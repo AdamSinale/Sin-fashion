@@ -255,7 +255,7 @@
             <a href="men_new_arrivals.html" class="men">MEN</a>
             <h2>FILTERS</h2>
         </div>
-        <ul>
+        <ul class="filter_leftbar_ul">
             <li>
                 <a class="color-btn">Color
                     <span class="fas fa-caret-down first"></span>
@@ -282,8 +282,8 @@
                         <a href="#">Green</a>
                     </li>
                     <li class="before_color">
-                        <img src="/photos/filters/color_grey.png" class="colorr">
-                        <a href="#">Grey</a>
+                        <img src="/photos/filters/color_gray.png" class="colorr">
+                        <a href="#">Gray</a>
                     </li>
                     <li class="before_color">
                         <img src="/photos/filters/color_pink.png" class="colorr">
@@ -386,7 +386,7 @@
     </div>
 
     <div class="navbar">
-        <div class="nav_btn open_nav">
+        <div class="navbarEl nav_btn open_nav">
            <span class="fas fa-bars"></span>
         </div>
         <a href="index.html"><img src="photos/logo2.png" id="logo" class="navbarEl"></a>
@@ -483,50 +483,50 @@
                     <img src="/photos/pants/pants.webp" alt="..." style="width: 100%; height: 100%;">
                     <img src="/photos/pants/pants2.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                 </div>
-                BEST SETS
-            </a>
-            <a class="cardL" href="#">
-                <div class="card_img">
-                    <img src="/photos/pants/pants.webp" alt="..." style="width: 100%; height: 100%;">
-                    <img src="/photos/pants/pants2.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
-                </div
-                >BRAS & TOPS
+                <div class="card-title">BEST SETS</div>
             </a>
             <a class="cardL" href="#">
                 <div class="card_img">
                     <img src="/photos/pants/pants.webp" alt="..." style="width: 100%; height: 100%;">
                     <img src="/photos/pants/pants2.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                 </div>
-                LEGGINGS
+                <div class="card-title">BRAS & TOPS</div>
             </a>
             <a class="cardL" href="#">
                 <div class="card_img">
                     <img src="/photos/pants/pants.webp" alt="..." style="width: 100%; height: 100%;">
                     <img src="/photos/pants/pants2.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                 </div>
-                TRAIN IN THE RAIN
+                <div class="card-title">LEGGINGS</div>
             </a>
             <a class="cardL" href="#">
                 <div class="card_img">
                     <img src="/photos/pants/pants.webp" alt="..." style="width: 100%; height: 100%;">
                     <img src="/photos/pants/pants2.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                 </div>
-                GIRL ON THE GO
+                <div class="card-title">TRAIN IN THE RAIN</div>
+            </a>
+            <a class="cardL" href="#">
+                <div class="card_img">
+                    <img src="/photos/pants/pants.webp" alt="..." style="width: 100%; height: 100%;">
+                    <img src="/photos/pants/pants2.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
+                </div>
+                <div class="card-title">GIRL ON THE GO</div>
             </a>
         </div>
     </div>
 
     <div class="new_arrivals_top">
         <h1>NEW ARRIVALS</h1>
-        <h4 style="padding: 1% 0; color: grey;">72 Matching Products</h4>
+        <h4 style="padding: 1% 0; color: gray;">72 Matching Products</h4>
     </div>
     
     <div class="sort_by second_sort filter_btn">
         <span>filters</span>
     </div>
     <div class="sort_by">
-        <form>
-            <select class="sort" name="color">
+        <form name="form">
+            <select class="sort" name="sort" onchange="getSort()">
                 <option>Sort by:</option>
                 <option>Best Sellers</option>
                 <option>Price: Low to High</option>
@@ -535,7 +535,7 @@
             </select>
         </form>
     </div>
-    <div>
+    <div class="new_arrivals_container">
         <div class="new_arrivals filters">
             <div class="filters_container">
                 <nav class="leftbar">
@@ -544,7 +544,7 @@
                         <a href="men_new_arrivals.html" class="men">MEN</a>
                         <h2>FILTERS</h2>
                     </div>
-                    <ul>
+                    <ul class="filter_leftbar_ul">
                         <li>
                             <a class="color-btn">Color
                                 <span class="fas fa-caret-down first"></span>
@@ -552,39 +552,39 @@
                             <ul class="color-show">
                                 <li class="before_color">
                                     <img src="/photos/filters/color_beige.png" class="colorr">
-                                    <a href="#">Beige</a>
+                                    <a class="beige_btn">Beige</a>
                                 </li>
                                 <li class="before_color">
                                     <img src="/photos/filters/color_black.png" class="colorr">
-                                    <a href="#">Black</a>
+                                    <a class="black_btn">Black</a>
                                 </li>
                                 <li class="before_color">
                                     <img src="/photos/filters/color_blue.png" class="colorr">
-                                    <a href="#">Blue</a>
+                                    <a class="blue_btn">Blue</a>
                                 </li>
                                 <li class="before_color">
                                     <img src="/photos/filters/color_brown.png" class="colorr">
-                                    <a href="#">Brown</a>
+                                    <a class="brown_btn">Brown</a>
                                 </li>
                                 <li class="before_color">
                                     <img src="/photos/filters/color_green.png" class="colorr">
-                                    <a href="#">Green</a>
+                                    <a class="green_btn">Green</a>
                                 </li>
                                 <li class="before_color">
-                                    <img src="/photos/filters/color_grey.png" class="colorr">
-                                    <a href="#">Grey</a>
+                                    <img src="/photos/filters/color_gray.png" class="colorr">
+                                    <a class="gray_btn">Gray</a>
                                 </li>
                                 <li class="before_color">
                                     <img src="/photos/filters/color_pink.png" class="colorr">
-                                    <a href="#">Pink</a>
+                                    <a class="pink_btn">Pink</a>
                                 </li>
                                 <li class="before_color">
                                     <img src="/photos/filters/color_red.png" class="colorr">
-                                    <a href="#">Red</a>
+                                    <a class="red_btn">Red</a>
                                 </li>
                                 <li class="before_color">
                                     <img src="/photos/filters/color_white.png" class="colorr">
-                                    <a href="#">White</a>
+                                    <a class="white_btn">White</a>
                                 </li>
                             </ul>
                         </li>
@@ -672,395 +672,698 @@
             </div>
         </div>
         <div class="new_arrivals cards_container">
-            <div style="margin-left: 5%;">
-                <a class="card_na" href="#">
+            <div>
+                <a class="card_na beige_pants best_seller" href="#">
+                    <div style="width: 93%; height: 100%;" class="card_img">
+                        <img src="/photos/pants/pants_beige.png" alt="..." style="width: 100%; height: 100%;">
+                        <img src="/photos/pants/pants_beige.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
+                    </div>
+                    <label>BEST SELLER</label>
+                    <h5 class="card-title">Card title1</h5>
+                    <p class="card-text">beige</p>
+                </a>
+                <a class="card_na beige_pants new" href="#">
+                    <div style="width: 93%; height: 100%;" class="card_img">
+                        <img src="/photos/pants/pants_beige.png" alt="..." style="width: 100%; height: 100%;">
+                        <img src="/photos/pants/pants_beige.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
+                    </div>
+                    <label>NEW</label>
+                    <h5 class="card-title">Card title1</h5>
+                    <p class="card-text">beige</p>
+                </a>
+                <a class="card_na beige_pants best_seller" href="#">
+                    <div style="width: 93%; height: 100%;" class="card_img">
+                        <img src="/photos/pants/pants_beige.png" alt="..." style="width: 100%; height: 100%;">
+                        <img src="/photos/pants/pants_beige.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
+                    </div>
+                    <label>BEST SELLER</label>
+                    <h5 class="card-title">Card title1</h5>
+                    <p class="card-text">beige</p>
+                </a>
+                <a class="card_na beige_pants new" href="#">
+                    <div style="width: 93%; height: 100%;" class="card_img">
+                        <img src="/photos/pants/pants_beige.png" alt="..." style="width: 100%; height: 100%;">
+                        <img src="/photos/pants/pants_beige.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
+                    </div>
+                    <label>NEW</label>
+                    <h5 class="card-title">Card title1</h5>
+                    <p class="card-text">beige</p>
+                </a>
+                <a class="card_na beige_pants best_seller" href="#">
+                    <div style="width: 93%; height: 100%;" class="card_img">
+                        <img src="/photos/pants/pants_beige.png" alt="..." style="width: 100%; height: 100%;">
+                        <img src="/photos/pants/pants_beige.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
+                    </div>
+                    <label>BEST SELLER</label>
+                    <h5 class="card-title">Card title1</h5>
+                    <p class="card-text">beige</p>
+                </a>
+                <a class="card_na beige_pants new" href="#">
+                    <div style="width: 93%; height: 100%;" class="card_img">
+                        <img src="/photos/pants/pants_beige.png" alt="..." style="width: 100%; height: 100%;">
+                        <img src="/photos/pants/pants_beige.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
+                    </div>
+                    <label>NEW</label>
+                    <h5 class="card-title">Card title1</h5>
+                    <p class="card-text">beige</p>
+                </a>
+                <a class="card_na beige_pants best_seller" href="#">
+                    <div style="width: 93%; height: 100%;" class="card_img">
+                        <img src="/photos/pants/pants_beige.png" alt="..." style="width: 100%; height: 100%;">
+                        <img src="/photos/pants/pants_beige.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
+                    </div>
+                    <label>BEST SELLER</label>
+                    <h5 class="card-title">Card title1</h5>
+                    <p class="card-text">beige</p>
+                </a>
+                <a class="card_na beige_pants new" href="#">
+                    <div style="width: 93%; height: 100%;" class="card_img">
+                        <img src="/photos/pants/pants_beige.png" alt="..." style="width: 100%; height: 100%;">
+                        <img src="/photos/pants/pants_beige.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
+                    </div>
+                    <label>NEW</label>
+                    <h5 class="card-title">Card title1</h5>
+                    <p class="card-text">beige</p>
+                </a>
+                <a class="card_na black_pants best_seller" href="#">
+                    <div style="width: 93%; height: 100%;" class="card_img">
+                        <img src="/photos/pants/pants_black.png" alt="..." style="width: 100%; height: 100%;">
+                        <img src="/photos/pants/pants_black.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
+                    </div>
+                    <label>BEST SELLER</label>
+                    <h5 class="card-title">Card title1</h5>
+                    <p class="card-text">black</p>
+                </a>
+                <a class="card_na black_pants new" href="#">
+                    <div style="width: 93%; height: 100%;" class="card_img">
+                        <img src="/photos/pants/pants_black.png" alt="..." style="width: 100%; height: 100%;">
+                        <img src="/photos/pants/pants_black.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
+                    </div>
+                    <label>NEW</label>
+                    <h5 class="card-title">Card title1</h5>
+                    <p class="card-text">black</p>
+                </a>
+                <a class="card_na black_pants best_seller" href="#">
+                    <div style="width: 93%; height: 100%;" class="card_img">
+                        <img src="/photos/pants/pants_black.png" alt="..." style="width: 100%; height: 100%;">
+                        <img src="/photos/pants/pants_black.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
+                    </div>
+                    <label>BEST SELLER</label>
+                    <h5 class="card-title">Card title1</h5>
+                    <p class="card-text">black</p>
+                </a>
+                <a class="card_na black_pants new" href="#">
+                    <div style="width: 93%; height: 100%;" class="card_img">
+                        <img src="/photos/pants/pants_black.png" alt="..." style="width: 100%; height: 100%;">
+                        <img src="/photos/pants/pants_black.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
+                    </div>
+                    <label>NEW</label>
+                    <h5 class="card-title">Card title1</h5>
+                    <p class="card-text">black</p>
+                </a>
+                <a class="card_na black_pants best_seller" href="#">
+                    <div style="width: 93%; height: 100%;" class="card_img">
+                        <img src="/photos/pants/pants_black.png" alt="..." style="width: 100%; height: 100%;">
+                        <img src="/photos/pants/pants_black.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
+                    </div>
+                    <label>BEST SELLER</label>
+                    <h5 class="card-title">Card title1</h5>
+                    <p class="card-text">black</p>
+                </a>
+                <a class="card_na black_pants new" href="#">
+                    <div style="width: 93%; height: 100%;" class="card_img">
+                        <img src="/photos/pants/pants_black.png" alt="..." style="width: 100%; height: 100%;">
+                        <img src="/photos/pants/pants_black.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
+                    </div>
+                    <label>NEW</label>
+                    <h5 class="card-title">Card title1</h5>
+                    <p class="card-text">black</p>
+                </a>
+                <a class="card_na black_pants best_seller" href="#">
+                    <div style="width: 93%; height: 100%;" class="card_img">
+                        <img src="/photos/pants/pants_black.png" alt="..." style="width: 100%; height: 100%;">
+                        <img src="/photos/pants/pants_black.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
+                    </div>
+                    <label>BEST SELLER</label>
+                    <h5 class="card-title">Card title1</h5>
+                    <p class="card-text">black</p>
+                </a>
+                <a class="card_na black_pants new" href="#">
+                    <div style="width: 93%; height: 100%;" class="card_img">
+                        <img src="/photos/pants/pants_black.png" alt="..." style="width: 100%; height: 100%;">
+                        <img src="/photos/pants/pants_black.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
+                    </div>
+                    <label>NEW</label>
+                    <h5 class="card-title">Card title1</h5>
+                    <p class="card-text">black</p>
+                </a>
+                <a class="card_na blue_pants best_seller" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_blue.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_blue.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>BEST SELLER</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">blue</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na blue_pants new" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_blue.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_blue.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>NEW</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">blue</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na blue_pants best_seller" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_blue.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_blue.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>BEST SELLER</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">blue</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na blue_pants new" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_blue.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_blue.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>NEW</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">blue</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na blue_pants best_seller" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_blue.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_blue.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>BEST SELLER</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">blue</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na blue_pants new" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_blue.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_blue.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>NEW</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">blue</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na blue_pants best_seller" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_blue.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_blue.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>BEST SELLER</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">blue</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na blue_pants new" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_blue.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_blue.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>NEW</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">blue</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na red_pants best_seller" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_red.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_red.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>BEST SELLER</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">red</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na red_pants new" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_red.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_red.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>NEW</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">red</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na red_pants best_seller" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_red.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_red.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>BEST SELLER</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">red</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na red_pants new" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_red.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_red.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>NEW</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">red</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na red_pants best_seller" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_red.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_red.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>BEST SELLER</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">red</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na red_pants new" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_red.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_red.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>NEW</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">red</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na red_pants best_seller" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_red.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_red.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>BEST SELLER</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">red</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na red_pants new" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_red.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_red.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>NEW</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">red</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na gray_pants best_seller" href="#">
+                    <div style="width: 93%; height: 100%;" class="card_img">
+                        <img src="/photos/pants/pants_gray.png" alt="..." style="width: 100%; height: 100%;">
+                        <img src="/photos/pants/pants_gray.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
+                    </div>
+                    <label>BEST SELLER</label>
+                    <h5 class="card-title">Card title1</h5>
+                    <p class="card-text">gray</p>
+                </a>
+                <a class="card_na gray_pants new" href="#">
+                    <div style="width: 93%; height: 100%;" class="card_img">
+                        <img src="/photos/pants/pants_gray.png" alt="..." style="width: 100%; height: 100%;">
+                        <img src="/photos/pants/pants_gray.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
+                    </div>
+                    <label>NEW</label>
+                    <h5 class="card-title">Card title1</h5>
+                    <p class="card-text">gray</p>
+                </a>
+                <a class="card_na gray_pants best_seller" href="#">
+                    <div style="width: 93%; height: 100%;" class="card_img">
+                        <img src="/photos/pants/pants_gray.png" alt="..." style="width: 100%; height: 100%;">
+                        <img src="/photos/pants/pants_gray.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
+                    </div>
+                    <label>BEST SELLER</label>
+                    <h5 class="card-title">Card title1</h5>
+                    <p class="card-text">gray</p>
+                </a>
+                <a class="card_na gray_pants new" href="#">
+                    <div style="width: 93%; height: 100%;" class="card_img">
+                        <img src="/photos/pants/pants_gray.png" alt="..." style="width: 100%; height: 100%;">
+                        <img src="/photos/pants/pants_gray.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
+                    </div>
+                    <label>NEW</label>
+                    <h5 class="card-title">Card title1</h5>
+                    <p class="card-text">gray</p>
+                </a>
+                <a class="card_na gray_pants best_seller" href="#">
+                    <div style="width: 93%; height: 100%;" class="card_img">
+                        <img src="/photos/pants/pants_gray.png" alt="..." style="width: 100%; height: 100%;">
+                        <img src="/photos/pants/pants_gray.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
+                    </div>
+                    <label>BEST SELLER</label>
+                    <h5 class="card-title">Card title1</h5>
+                    <p class="card-text">gray</p>
+                </a>
+                <a class="card_na gray_pants new" href="#">
+                    <div style="width: 93%; height: 100%;" class="card_img">
+                        <img src="/photos/pants/pants_gray.png" alt="..." style="width: 100%; height: 100%;">
+                        <img src="/photos/pants/pants_gray.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
+                    </div>
+                    <label>NEW</label>
+                    <h5 class="card-title">Card title1</h5>
+                    <p class="card-text">gray</p>
+                </a>
+                <a class="card_na gray_pants best_seller" href="#">
+                    <div style="width: 93%; height: 100%;" class="card_img">
+                        <img src="/photos/pants/pants_gray.png" alt="..." style="width: 100%; height: 100%;">
+                        <img src="/photos/pants/pants_gray.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
+                    </div>
+                    <label>BEST SELLER</label>
+                    <h5 class="card-title">Card title1</h5>
+                    <p class="card-text">gray</p>
+                </a>
+                <a class="card_na gray_pants new" href="#">
+                    <div style="width: 93%; height: 100%;" class="card_img">
+                        <img src="/photos/pants/pants_gray.png" alt="..." style="width: 100%; height: 100%;">
+                        <img src="/photos/pants/pants_gray.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
+                    </div>
+                    <label>NEW</label>
+                    <h5 class="card-title">Card title1</h5>
+                    <p class="card-text">gray</p>
+                </a>
+                <a class="card_na green_pants best_seller" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_green.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_green.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>BEST SELLER</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">green</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na green_pants new" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_green.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_green.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>NEW</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">green</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na green_pants best_seller" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_green.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_green.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>BEST SELLER</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">green</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na green_pants new" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_green.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_green.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>NEW</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">green</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na green_pants best_seller" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_green.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_green.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>BEST SELLER</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">green</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na green_pants new" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_green.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_green.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>NEW</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">green</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na green_pants best_seller" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_green.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_green.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>BEST SELLER</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">green</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na green_pants new" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_green.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_green.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>NEW</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">green</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na pink_pants best_seller" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_pink.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_pink.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>BEST SELLER</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">pink</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na pink_pants new" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_pink.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_pink.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>NEW</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">pink</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na pink_pants best_seller" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_pink.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_pink.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>BEST SELLER</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">pink</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na pink_pants new" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_pink.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_pink.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>NEW</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">pink</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na pink_pants best_seller" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_pink.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_pink.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>BEST SELLER</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">pink</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na pink_pants new" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_pink.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_pink.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>NEW</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">pink</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na pink_pants best_seller" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_pink.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_pink.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>BEST SELLER</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">pink</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na pink_pants new" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_pink.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_pink.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>NEW</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">pink</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na brown_pants best_seller" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_brown.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_brown.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>BEST SELLER</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">brown</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na brown_pants new" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_brown.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_brown.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>NEW</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">brown</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na brown_pants best_seller" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_brown.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_brown.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>BEST SELLER</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">brown</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na brown_pants new" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_brown.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_brown.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>NEW</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">brown</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na brown_pants best_seller" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_brown.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_brown.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>BEST SELLER</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">brown</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na brown_pants new" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_brown.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_brown.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>NEW</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">brown</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na brown_pants best_seller" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_brown.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_brown.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>BEST SELLER</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">brown</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na brown_pants new" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants_brown.png" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants_brown.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>NEW</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">brown</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na white_pants best_seller" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants.webp" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants2.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>BEST SELLER</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">white</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na white_pants new" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants.webp" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants2.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>NEW</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">white</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na white_pants best_seller" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants.webp" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants2.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>BEST SELLER</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">white</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na white_pants new" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants.webp" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants2.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>NEW</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">white</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na white_pants best_seller" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants.webp" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants2.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>BEST SELLER</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">white</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na white_pants new" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants.webp" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants2.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>NEW</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">white</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na white_pants best_seller" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants.webp" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants2.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>BEST SELLER</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">white</p>
                 </a>
-                <a class="card_na" href="#">
+                <a class="card_na white_pants new" href="#">
                     <div style="width: 93%; height: 100%;" class="card_img">
                         <img src="/photos/pants/pants.webp" alt="..." style="width: 100%; height: 100%;">
                         <img src="/photos/pants/pants2.png" alt="..." style="width: 100%; height: 100%;" class="second-img">
                     </div>
+                    <label>NEW</label>
                     <h5 class="card-title">Card title1</h5>
-                    <p class="card-text">Not so much text. just like that</p>
+                    <p class="card-text">white</p>
                 </a>
             </div>
         </div>
     </div>
 
+    <div class="about_us">
+        <div class="aqb">
+            <h4>Customer Service</h4><br>
+            <a href="#">Track My Order</a><br>
+            <a href="#">FAQs</a><br>
+            <a href="#">Contact Us</a><br>
+            <a href="#">Shipping Info</a><br>
+            <a href="#">Return Policy</a><br>
+            <a href="#">Gift Card</a><br>
+            <a href="#">Size Guide</a><br>
+            <a href="#">Reviews</a>
+        </div>
+        <div class="aqb">
+            <h4>My Account</h4><br>
+            <a href="#">Login or Register</a><br>
+            <a href="#">Order History</a><br>
+            <a href="#">Shipping & Billing</a><br>
+            <a href="#">Refer a Friend</a>
+        </div>
+        <div class="aqb">
+            <h4>Information</h4><br>
+            <a href="#">We Are SiN</a><br>
+            <a href="#">About Us</a><br>
+            <a href="#">Blog</a><br>
+            <a href="#">Yoga Classes</a>
+            <a href="#">Stores</a><br>
+            <a href="#">Pro Program</a><br>
+            <a href="#">Careers</a>
+        </div>
+        <div class="aqb">
+            <h4>Become One Of Us</h4><br>
+            <p>By subscribing you'll be one of the few to know about<br>new must-have products and receive discounts!</p><br>
+            <form>
+                <input type="text" placeholder="   First Name"><br><br>
+                <input type="text" placeholder="   Email@gmail.com"><br><br>
+                <input type="submit" style="height: 42px;">
+            </form>
+        </div>
+    </div>
     <button onclick="scrollToTop()" id="myBtn" >^</button>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
